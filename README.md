@@ -75,8 +75,10 @@ Embedded systems project measuring physical parameters via a custom-designed PCB
 
 ## 📫 Connect with me
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](#)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](#)
+[![LinkedIn](www.linkedin.com/in/
+astha-shingane
+](#)
+[![Portfolio](file:///C:/Users/USER/Downloads/AsthaShingane_portfolio.html)](#)
 
 <sub>Replace the LinkedIn / Portfolio links above with your real URLs.</sub>
 
