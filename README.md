@@ -49,14 +49,54 @@ Spring Boot REST API that scores a resume against a job description using Claude
 `Java` `Spring Boot` `REST API` `LLM Integration`
 
 ### 🏨 [Hotel Management System](#)
-Full-stack booking system with room management, reservations, and billing.
-`Java` `JSP` `Servlets` `MySQL` `JDBC` `MVC`
+# Hotel Management System
 
-### 📟 Smart Measuring Device
-Embedded systems project measuring physical parameters via a custom-designed PCB.
-`Embedded Systems` `PCB Design`
+A full-stack hotel booking platform built with **Java, JSP, Servlets, and MySQL**, following the MVC pattern. Supports two user roles — **Guests** and **Hotel Owners** — with signup/login, hotel listings, room booking, and booking confirmation flows.
 
-> 🔗 Replace the `#` links above with your actual repo URLs once each project has its own repository.
+## Features
+
+- Guest signup/login and Owner signup/login (separate flows)
+- Browse hotels and view hotel details
+- Book a hotel room and get a booking confirmation
+- Edit/update booking or profile details
+- DAO layer separating database access from business logic
+
+## Tech Stack
+
+- **Backend:** Java, Servlets, JSP
+- **Database:** MySQL (via JDBC, `mysql-connector-java-8.0.29`)
+- **Architecture:** MVC
+- **Server:** Apache Tomcat 10.1
+
+## Project Structure
+
+```
+src/main/java/com/demo/    → Guest-side DAO and model classes
+src/main/java/com/demo1/   → Owner/Hotel-side DAO and model classes
+src/main/webapp/           → JSP pages (login, signup, booking, hotel details)
+src/main/webapp/WEB-INF/   → Booking success page, MySQL connector jar
+```
+
+## Running Locally
+
+1. **Import into Eclipse** (or any IDE with Dynamic Web Project + Tomcat support):
+   - File → Import → Existing Projects into Workspace → select this folder
+2. **Set up MySQL:**
+   - Create a database (e.g. `HotelManagement`)
+   - Update the JDBC connection details (URL, username, password) in the DAO classes to match your local MySQL setup
+3. **Add the MySQL connector jar** (`mysql-connector-java-8.0.29.jar`, already included under `WEB-INF/lib`) to your build path
+4. **Run on Apache Tomcat 10.1+** from within your IDE, or deploy the generated WAR to your own Tomcat server
+5. Open `index.html` in the browser to start
+
+## Note
+
+Some image assets referenced in the original Eclipse project were linked from a local folder and aren't included in this repo — add your own images under `src/main/webapp/images/` if needed.
+
+## Author
+
+Astha Shingane — B.E. Electronics & Telecommunication, Java Full Stack (SevenMentor Pvt. Ltd.)
+
+
 
 ---
 
